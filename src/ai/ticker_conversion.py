@@ -1,6 +1,6 @@
 # src/ai/ticker_conversion.py
 import requests
-from src.config import TOGETHER_API_KEY, TOGETHER_API_URL
+from src.config import TOGETHER_API_KEY, TOGETHER_API_URL, MODEL_NAME
 
 
 def get_ticker_from_company_name(company_name: str, language: str = "en") -> str:
