@@ -79,6 +79,7 @@ class FinancialAgent:
           * 'analysis_text': טקסט הניתוח
           * 'stats_table': טבלת הסטטיסטיקות (DataFrame)
           * 'pdf_report': דו"ח PDF (BytesIO)
+          * 'price_df': נתוני מניות עבור שנה אחרונה (DataFrame)
         """
         tickers_list = self.convert_tickers(tickers_input)
         start_date = date.today() - timedelta(days=365)
@@ -95,7 +96,8 @@ class FinancialAgent:
         return {
             "analysis_text": analysis_text,
             "stats_table": stats,
-            "pdf_report": pdf_report
+            "pdf_report": pdf_report,
+            "price_df": price_df
         }
 
     def chat_with_agent(self, prompt: str) -> str:
