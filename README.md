@@ -107,7 +107,3 @@ OTHER_CONFIG=value
 - Enhance visualization capabilities
 - Add more export formats
 - Implement real-time updates
-
-## License
-
-[Your chosen license] 
